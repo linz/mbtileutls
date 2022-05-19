@@ -34,11 +34,11 @@ source_mbtile      = args[0]
 destination_mbtile = args[1]
 
 if not os.path.isfile(source_mbtile):
-    print "Source file: " + source_mbtile + " does not exist"
+    print("Source file: " + source_mbtile + " does not exist")
     exit(1)
 
 if not os.path.isfile(destination_mbtile):
-    print "destination file: " + destination_mbtile + " does not exist"
+    print("destination file: " + destination_mbtile + " does not exist")
     exit(1)
 
 conn = sqlite3.connect(destination_mbtile)
